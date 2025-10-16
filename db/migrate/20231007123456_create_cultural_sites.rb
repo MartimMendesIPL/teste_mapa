@@ -1,0 +1,1 @@
+class CreateCulturalSites < ActiveRecord::Migration[6.0]\n  def change\n    create_table :cultural_sites do |t|\n      t.string :name\n      t.string :type\n      t.string :location\n      t.text :description\n\n      t.timestamps\n    end\n  end\nend\n
